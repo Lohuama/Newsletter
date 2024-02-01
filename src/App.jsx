@@ -1,14 +1,19 @@
-import ArticleList from "./componentes/Header/ArticleList/ArticleList";
+import { useState } from "react";
+import ArticleList from "./componentes/ArticleList/ArticleList";
 import Header from "./componentes/Header/Header";
+import Form from "./componentes/Form/Form";
 
 
 function App() {
+  const [user, setUser] = useState();
+  const hasUser = Boolean(user)
 
   return (
-    <>
-      <Header />
-      <ArticleList />
-    </>
+    <div className="h-screen">
+      <Header user={user} />
+      {hasUser && <ArticleList />}
+      {hasUser || <Form  onSubmit={setUser}/> }
+    </div>
   )
 }
 
