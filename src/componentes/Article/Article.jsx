@@ -13,6 +13,8 @@ const Article = ({title, text, tags, image, alt}) => {
                 )
             }
         </div>
+        {image && <img src={image} />}
+        {image && alt && <span className="sr-only">{alt}</span>}
     </div>
 }
 
