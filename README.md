@@ -27,7 +27,7 @@ This React project, built with Vite, serves as a hands-on experience to learn an
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your_username/your_project.git`
+1. Clone the repository: `git clone https://github.com/Lohuama/Newsletter.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
